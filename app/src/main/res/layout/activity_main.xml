@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campos de texto para ingresar datos -->
+    <EditText
+        android:id="@+id/etNombreMascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de la mascota" />
+
+    <EditText
+        android:id="@+id/etCodigoChip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Código de chip" />
+
+    <EditText
+        android:id="@+id/etNombreDueno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del dueño" />
+
+    <EditText
+        android:id="@+id/etDireccionDueno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dirección del dueño" />
+
+    <!-- Botones -->
+    <Button
+        android:id="@+id/btnEnviarDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar Datos" />
+
+    <Button
+        android:id="@+id/btnCargarDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cargar Datos" />
+
+    <!-- Contenedor donde se mostrarán los datos cargados -->
+    <LinearLayout
+        android:id="@+id/llMascotas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp" />
+
+</LinearLayout>
